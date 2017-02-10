@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- SEO  -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta http-equiv="refresh" content="20">
+    <!-- 苹果专用 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 简单移动端适配 -->
+   	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 图标 -->
+	<link rel="shortcut icon" href="">
+    
+    <title>模板</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <!--<script type="text/javascript" src="js/new_file.js" ></script>-->
+    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+    <script type="text/javascript" src="js/jquery.easings.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js" ></script>
+    <!--自己的css以及js-->
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<ul id="myMenu">
+		<!--导航栏 需要设置H5的自定义属性data-menuanchor  这个属性的值需要设置和锚文本信息同样的内容-->
+		<li data-menuanchor="selfAssessment"><a href="#selfAssessment">自我评价</a></li>
+		<li data-menuanchor="worksShow"><a href="#worksShow">作品展示</a></li>
+		<li data-menuanchor="primarySkill"><a href="#primarySkill">主要技能</a></li>
+		<li data-menuanchor="introduce" class="active"><a href="#introduce">个人简介</a></li>
+		<li data-menuanchor="all"><a href="#all">总的说</a></li>
+	</ul>
+    <div id="fullpage">
+    	<div class="section" id="pageZero">
+    		
+    	</div>
+	    <div class="section" id="pageOne">第一屏</div>
+	    <div class="section" id="pageTwo">第二屏</div>
+	    <div class="section" id="pageThree">
+	        <div class="slide">
+	        	<img src="img/p5.png" />
+	        </div>
+	        <div class="slide">第三屏的第二屏</div>
+	        <div class="slide">第三屏的第三屏</div>
+	        <div class="slide">第三屏的第四屏</div>
+	    </div>
+	    <div class="section" id="pageFour">第四屏</div>
+	</div>
+
+    <script type="text/javascript">
+    	(function(){
+    		$("").ready(function(){
+    			$('#fullpage').fullpage({
+    				'menu':"#myMenu",
+//			        'verticalCentered': true,//内容是否垂直居中
+			        'resize':true,//内容随窗口缩放而缩放
+			        'css3': true,//确认是否使用css3动画
+			        'easingcss3':"linear",//动画类型
+//			        'sectionsColor': ['firebrick','lightblue', 'pink', 'rosybrown', 'maroon'],//每一屏的背景颜色
+			        anchors: ['all','introduce', 'primarySkill', 'worksShow', 'selfAssessment'],//定义导航的锚文本信息(在网址栏出现的锚点文本信息)
+//			        'navigation': true,//设置为true将会显示小圆圈组成的快速导航栏
+//			        'navigationPosition': 'right',//小圆圈导航栏的位置
+//			        'navigationTooltips': ['总的说','个人简介', '主要技能', '作品展示', '自我评价'],//鼠标放在小圆圈上出现提示
+			        'slidesNavigation':true,//slide是否有小圆圈
+			    })
+    		})
+    	})();
+		
+		    	
+    </script>
+</body>
+
+</html>

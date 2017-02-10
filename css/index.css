@@ -1,0 +1,108 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: url(../images/09e0bae5878cc59f422263b9d69e15c9.jpg) no-repeat;
+	background-size: cover;
+}
+@font-face {
+	font-family:fJianZhi; 
+	src: url("../font/书体坊硬笔行书3500.ttf")
+} 
+@font-face {
+	font-family:fKaTong; 
+	src: url("../font/华文新魏.TTF")
+} 
+button{
+	height: 40px;
+	width: 100px;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	color: #000;
+	z-index: 1;
+} 
+#pageZero{
+	background: url(../img/x1.jpg) no-repeat;
+	background-size: cover;
+}
+#myMenu{
+	display: none;
+}
+.oneWord{
+	display: none;
+}
+#person{
+	height: 200px;
+	width: 200px;
+	border-radius: 360px;
+	background: url(../images/person1.jpg) no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 260px;
+	left: 360px;
+	display: none;
+}
+#myIntroduce{
+	font-family: fKaTong;
+	font-size: 18px;
+	line-height: 23px;
+}
+@media screen and (min-width:800px ) {
+	#myMenu{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		height: 60px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		background-color: rgba(71,166,173,0);
+		z-index: 1;
+	}
+	#myMenu li{
+		list-style: none;
+	}
+	#myMenu li a{
+		display: inline-block;
+		width: 80px;
+		border: 0;
+		color: chocolate;
+		text-decoration: none;
+		text-align: center;
+		float: right;
+		margin: 0 20px;
+		line-height: 60px;
+		padding: 0;
+		font-weight: bold;
+	}
+	#pageZero{
+		background: url(../images/3190735d463a80ad027960d2fb83eeb4.jpg) no-repeat ;
+		background-size: cover;
+	}
+	#person{
+		top: 260px;
+		left: 360px;
+	}
+	#myIntroduce{
+		height: 300px;
+		width: 300px;
+		position: absolute;
+		left: 600px;
+		top: 440px;
+		font-family: fKaTong;
+		font-size: 18px;
+		line-height: 23px;
+	}
+	.oneWord{
+		position: absolute;
+		top: 300px;
+		left: 680px;
+		font-size: 25px;
+		font-family: fJianZhi;
+		transform: rotate(45deg);
+		display: block;
+	}
+}
